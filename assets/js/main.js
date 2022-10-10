@@ -20,16 +20,19 @@
 // let / const
 // for / loop
 // if / else 
+ 
+
+
+
 
 
 //Scrivi un programma che stampi in console i numeri da 1 a 100
 
- 
 // Utlizzare for per il ciclo dei numeri 
 
-    
-for(let i = 1; i <= 100; i++){
 
+for(let i = 1; i <= 100; i++){
+    
     // se i numeri sono multipli di 3 e 5 stampo in console FizzBuzz 
     if (i % 3 === 0 && i % 5 === 0){
         console.log(`FizzBuzz`);
@@ -44,12 +47,30 @@ for(let i = 1; i <= 100; i++){
     } else if (i % 5 === 0){
         // stampo Buzz
         console.log(`Buzz`);
-
+        
         // altrimenti stampo i numeri da 0 a 100 non multilpi di 3 e 5 
     } else{
         console.log(i);
     }
 }
+
+//Stampiamo nella dom attraverso la funzione append
+
+
+// creaimo una variabile e selezioniamo il nostro HTML attraverso il querySelector 
+const containerEl = document.querySelector(`div.container`);
+
+// creo un box utilizzando createElement
+
+const box = document.createElement(`box`);
+
+// appendo all'elemnto box "i"
+
+box.append(i);
+
+// appendo l' elemento box al div.container 
+
+div.container.append(box);
 
 
 
