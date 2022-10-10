@@ -27,32 +27,32 @@
 
 // Utlizzare for per il ciclo dei numeri 
 
-
+    
 for(let i = 0; i <= 100; i++){
     console.log(i);
-    // stampo dei numeri da 1 a 100 
+    // stampo dei numeri da 1 a 100
 
-    // condizioni se è multiplo di 3
-    if (i % 3 === 0){
-    // stampo fizz
-    console.log(`Fizz`);
-    
-    //condizioni se è multiplo di 5  
+    // se i numeri sono multipli di 3 e 5  stampo in conole FizzBuzz 
+    if (i % 3 === 0 && i % 5 === 0 ) {
+        console.log(`FizzBuzz`);
+        // stampo in conole FizzBuzz 
+        
+        // se i numeri sono multipli di 3 stampo in console Fizz
+    } else if (i % 3 === 0) {
+        // stampo in console Fizz
+        console.log(`Fizz`);
+        
+        // se i numeri sono multipli di 5 stampo in console Buzz
     } else if (i % 5 === 0){
-    // stampo buzz
-    console.log(`Buzz`);
-    
-    // condizione se sono multipli di 3 e 5 
-    } else if (i % 3 === 0 && i % 5 === 0){
-    // stampo FizzBuzz
-    console.log(`FizzBuzz`);  
-    
-    // altrimenti 
+        // stampo Buzz
+        console.log(`Buzz`);
+
+        // altrimenti stampo i numeri non multilpi di 3 e 5 
     } else{
-    // stampo in console i numeri normalmente 
-    console.log(i);
+        // console.log(`i`);
     }
 }
+
 
 
 
