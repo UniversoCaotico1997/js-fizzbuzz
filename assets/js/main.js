@@ -24,22 +24,20 @@
 
 //Scrivi un programma che stampi in console i numeri da 1 a 100
 
-
+ 
 // Utlizzare for per il ciclo dei numeri 
 
     
-for(let i = 0; i <= 100; i++){
-    console.log(i);
-    // stampo dei numeri da 1 a 100
+for(let i = 1; i <= 100; i++){
 
-    // se i numeri sono multipli di 3 e 5  stampo in conole FizzBuzz 
-    if (i % 3 === 0 && i % 5 === 0 ) {
+    // se i numeri sono multipli di 3 e 5 stampo in console FizzBuzz 
+    if (i % 3 === 0 && i % 5 === 0){
         console.log(`FizzBuzz`);
-        // stampo in conole FizzBuzz 
+        // stampo FizzBuzz 
         
         // se i numeri sono multipli di 3 stampo in console Fizz
-    } else if (i % 3 === 0) {
-        // stampo in console Fizz
+    } else if (i % 3 === 0){
+        // stampo Fizz
         console.log(`Fizz`);
         
         // se i numeri sono multipli di 5 stampo in console Buzz
@@ -47,9 +45,9 @@ for(let i = 0; i <= 100; i++){
         // stampo Buzz
         console.log(`Buzz`);
 
-        // altrimenti stampo i numeri non multilpi di 3 e 5 
+        // altrimenti stampo i numeri da 0 a 100 non multilpi di 3 e 5 
     } else{
-        // console.log(`i`);
+        console.log(i);
     }
 }
 
