@@ -28,49 +28,57 @@
 
 //Scrivi un programma che stampi in console i numeri da 1 a 100
 
-// Utlizzare for per il ciclo dei numeri 
-
-
-for(let i = 1; i <= 100; i++){
-    
-    // se i numeri sono multipli di 3 e 5 stampo in console FizzBuzz 
-    if (i % 3 === 0 && i % 5 === 0){
-        console.log(`FizzBuzz`);
-        // stampo FizzBuzz 
-        
-        // se i numeri sono multipli di 3 stampo in console Fizz
-    } else if (i % 3 === 0){
-        // stampo Fizz
-        console.log(`Fizz`);
-        
-        // se i numeri sono multipli di 5 stampo in console Buzz
-    } else if (i % 5 === 0){
-        // stampo Buzz
-        console.log(`Buzz`);
-        
-        // altrimenti stampo i numeri da 0 a 100 non multilpi di 3 e 5 
-    } else{
-        console.log(i);
-    }
-}
-
-//Stampiamo nella dom attraverso la funzione append
 
 
 // creaimo una variabile e selezioniamo il nostro HTML attraverso il querySelector 
 const containerEl = document.querySelector(`div.container`);
 
+// Utlizzare for per il ciclo dei numeri 
+
+
+for(let i = 1; i <= 100; i++){
+    const boxEl = document.createElement(`div`);
+    boxEl.classList.add(`box`)
+
+
+    // se i numeri sono multipli di 3 e 5 stampo in console FizzBuzz 
+    if (i % 3 === 0 && i % 5 === 0){
+        boxEl.append(`FizzBuzz`);
+        // console.log(`FizzBuzz`);
+        // stampo FizzBuzz 
+        
+        // se i numeri sono multipli di 3 stampo in console Fizz
+    } else if (i % 3 === 0){
+        boxEl.append(`Fizz`);
+        // stampo Fizz
+        // console.log(`Fizz`);
+        
+        // se i numeri sono multipli di 5 stampo in console Buzz
+    } else if (i % 5 === 0){
+        boxEl.append(`Buzz`);
+        // stampo Buzz
+        // console.log(`Buzz`);
+        
+        // altrimenti stampo i numeri da 0 a 100 non multilpi di 3 e 5 
+    } else{
+        boxEl.append(i);
+        // console.log(i);
+    }
+    containerEl.append(boxEl);
+}
+
+//Stampiamo nella dom attraverso la funzione append
+
+
+
 // creo un box utilizzando createElement
 
-const box = document.createElement(`box`);
 
 // appendo all'elemnto box "i"
 
-box.append(i);
 
-// appendo l' elemento box al div.container 
+// appendo l' elemento  boxEL a containerEl
 
-div.container.append(box);
 
 
 
